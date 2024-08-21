@@ -1,5 +1,40 @@
+# PROJECT TITLE : To Setup a Static Website Using Nginx
+The goal of the project is to have a fully deployed and secure static website ready !
 
-Documentation
+In this project, I will be:
+Building with Nginx: I'll set up Nginx as my web server, the engine that delivers my website content to the world.
+
+Connecting with Route53: I'll configure Amazon Route53, the DNS service that directs visitors to your website's location.
+
+Securing with Certbot: I'll implement HTTPS encryption using Certbot, ensuring a safe and secure connection for your website.
+
+By the end of this project, I'll have a fully deployed and secure static website
+
+## Below are the respective task for Project 1
+S/N	Project Tasks
+
+1	Buy a domain name from a domain Registrar
+
+2	Spin up an Ubuntu server & assign an elastic IP to it
+
+3	SSH into the server and install Nginx
+
+4	Download freely HTML website files(too plate) or use your personal code
+
+5	Copy the website files to the Nginx website directory
+
+6	Validate the website using the server IP address
+
+7	In Route53, create an A record and add the Elastic IP
+
+8	Using DNS verify the website setup
+
+9	Install certbot and Request For an SSL/TLS Certificate
+
+10	Validate the website SSL using the OpenSSL utility
+
+
+## Documentation
 I Created An Ubuntu Server
 And i clicked on EC2 within the AWS management console.
 1
@@ -53,7 +88,7 @@ sudo apt upgrade
 
 sudo apt install nginx
 
-i Started my Nginx server by running the sudo systemctl start nginx command, i enabled it to start on boot by executing sudo systemctl enable nginx, and then i confirmed if it's running with the sudo systemctl status nginx command.
+i started my Nginx server by running the sudo systemctl start nginx command, i enabled it to start on boot by executing sudo systemctl enable nginx, and then i confirmed if it's running with the sudo systemctl status nginx command.
 
 I went back to my EC2 dashboard and copy my Public IPv4 address.
 
@@ -122,6 +157,7 @@ I restarted my nginx server by running the sudo systemctl restart nginx command.
 
 I went to my domain name in a web browser to verify that my website is accessible.
 ![alt text](<.vscode/img/not secured.png>)
+The picture above was before i corrected my domain name 
 
 I installed certbot by executing the following commands: sudo apt update sudo apt install certbot python3-certbot-nginx
 
@@ -133,5 +169,5 @@ i Verified the website's SSL using the OpenSSL utility with the command: openssl
 
 
 I Visited https://<kolawolemccalla.space> to view my website.
-![alt text](.vscode/img/secured.png)
+![](<.vscode/img/Screenshot (17).png>)
 The End Of Project 1
